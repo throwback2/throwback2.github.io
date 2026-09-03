@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yetkilendirme Tamamlandı</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px;
+         margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #1f2328; }
+  code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; word-break: break-all; }
+  #url { display: block; margin-top: 12px; }
+  button { margin-top: 16px; padding: 8px 16px; border: none; border-radius: 6px;
+           background: #2563eb; color: #fff; font-size: 1rem; cursor: pointer; }
+</style>
+</head>
+<body>
+  <h1>Yetkilendirme tamamlandı</h1>
+  <p>Aşağıdaki adresi kopyalayıp uygulamadaki <strong>"Yönlendirme adresi"</strong> alanına yapıştırın:</p>
+  <code id="url"></code>
+  <button onclick="navigator.clipboard.writeText(location.href)">Adresi kopyala</button>
+  <script>document.getElementById('url').textContent = location.href;</script>
+</body>
+</html>
